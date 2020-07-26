@@ -118,7 +118,7 @@ Works Section
 .my-works .work-item.down{transform: translateY(0);}
 
 #works{
-  background: linear-gradient(to right, rgba(0,0,0, .8) , rgba(0,0,0, .8)), url("../media/work/work1.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(0,0,0, .7) , rgba(0,0,0, .7)), url("../media/work/clients.png") no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -132,7 +132,7 @@ color: #14ea70;
   }
 
 #works::before{
-  content: "Clients";
+  content: "";
   color: #0c0c0c;
   font-family: 'Abril Fatface', cursive;
   font-size: 200px;
