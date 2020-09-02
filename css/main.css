@@ -35,7 +35,6 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #333;
-  overflow-x: hidden !important;
 }
 
 /*==================================================
@@ -1737,8 +1736,7 @@ ul.social-icons li a:hover {
 /*==================================================
  CSS for width 480px
 ==================================================*/
-#intro,
-#demos,
+
 #responsive,
 #timeline,
 #testimonials,
