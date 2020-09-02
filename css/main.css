@@ -273,10 +273,10 @@ Achievements Section
 }
 
 #achievements::after{
-  content: "Achivement";
+  content: "Awards";
   color: rgba(225,255,255, .15);
   font-family: 'Abril Fatface', cursive;
-  font-size: 230px;
+  font-size: 150px;
   position: absolute;
   top: 20%;
   right: 8%;
@@ -317,6 +317,40 @@ Achievements Section
 
 .my-achievements .item-list .item .item-info h3{
   color: #fff;
+}
+
+/*==================================================
+ CSS for width 1260px
+==================================================*/ 
+
+@media only screen and (max-width : 1260px) {
+  .container{max-width: 75%;}
+  .headline h1{font-size: 50px;}
+  .headline h2{font-size: 18px;}
+  .my-achievements .item-list{margin-top: 0;}
+}
+/*==================================================
+ CSS for width 991px
+==================================================*/ 
+
+@media only screen and (max-width : 991px) {
+  
+  
+  
+  /* Works Section -----------------------------------------------------------------------------------------------------------------------------------*/
+  .my-works .work-item.down{transform: translateY(0);}
+  
+ 
+  
+  /* Achievements Section -----------------------------------------------------------------------------------------------------------------------------------*/
+  #achievements .headline h1{color: #fff;}
+  #achievements::before{width: 100% !important;}
+  .my-achievements .item-list{transform: translateY(0);}
+  
+  /* Fixed Elements -----------------------------------------------------------------------------------------------------------------------------------*/
+  .social-links{left: 0; right: 0; margin: auto; bottom: 30px;}
+  .social-links ul{text-align: center;}
+  
 }
 
 
@@ -705,6 +739,60 @@ ul.element-scroll-parallax li{
 /*==================================================
   Navigation
   ==================================================*/
+  .navbar-nav .dropdown-menu{
+    background: #191919;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 4px;
+    position: absolute;
+  }
+  
+ .navbar-nav .dropdown-menu::befor{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #191919;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  
+ .navbar-nav .dropdown-menu li{
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255, .2);
+  }
+  
+ .navbar-nav .dropdown-menu li a{
+    color: #000;
+  }
+  
+ .navbar-nav .dropdown-menu li a:hover,
+ .navbar-nav .dropdown-menu li a:active,
+ .navbar-nav .dropdown-menu li a:focus{
+    background: transparent;
+    color: #14ea70;
+  }
+
+
+  /*==================================================
+ CSS for width 767px
+==================================================*/ 
+
+@media only screen and (max-width : 767px) {
+  
+  
+ .navbar-nav .dropdown-menu{border-radius: 0;}
+ .navbar-nav .dropdown-menu::befor{content: none;}
+ .navbar-nav .open .dropdown-menu > li > a{color: #191919;}
+ .navbar-nav .open .dropdown-menu > li > a:hover,
+ .navbar-nav .open .dropdown-menu > li > a:active,
+ .navbar-nav .open .dropdown-menu > li > a:focus{color: #191919; transition: all 1s;}
+  
+}
 
 #header.on-scroll{
   left: 0;
@@ -890,6 +978,24 @@ Timline Section
 .timeline-contents .event-item .event-description-right h4, .event-description-left h4{
   margin-top: 0;
   font-weight: 600;
+}
+
+
+/*==================================================
+ CSS for width 767px
+==================================================*/ 
+
+@media only screen and (max-width : 767px) {
+  
+ 
+  
+ 
+  /* Timeline Section -----------------------------------------------------------------------------------------------------------------------------------*/
+  .timeline-contents::after{margin: 0;}
+  .event-item .duration{float: left !important; margin: 0 0 30px 15px !important; text-align: left !important; position: relative;}
+  .event-item .duration::after{left: -24px !important;}
+  .event-item .event{text-align: left !important; margin-left: 15px;}
+  
 }
 
 
